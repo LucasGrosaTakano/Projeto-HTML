@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>biografia</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial Black', sans-serif;
+      background: #e60012;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    .background {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+      background-size: 10px 10px;
+      z-index: 0;
+    }
+
+    .main-container {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 50px 80px;
+      gap: 40px;
+    }
+
+    .left-text {
+      flex: 1;
+      font-size: 18px;
+      text-shadow: 2px 2px 0 black;
+      max-width: 600px;
+      line-height: 1.6;
+    }
+
+    .title {
+      font-size: 48px;
+      color: black;
+      background: white;
+      display: inline-block;
+      padding: 5px 15px;
+      transform: rotate(-2deg);
+      box-shadow: 5px 5px 0 black;
+      margin-bottom: 30px;
+    }
+
+    .character-img {
+      flex-shrink: 0;
+    }
+
+    .character-img img {
+      width: 500px;
+      height: auto;
+      border: 4px solid black;
+      box-shadow: 8px 8px 0 black;
+    }
+
+    .morg {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .morgana {
+        right: 650px;
+        width: 100px; 
+    }
+
+    .botao{
+        position: absolute; 
+        left: 10px;
+        top: 70%;
+        width: 560px; 
+        cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+  <div class="main-container">
+    <div class="left-text">
+      <div class="title">Blog Profissional</div>
+      <p>
+        Olá! Meu nome é Lucas, atualmente estou no 2º ano do Ensino Médio.<br><br>
+        Já participei de alguns cursos na área de tecnologia, com foco em linguagens de programação e desenvolvimento.<br>
+        Tenho interesse por esse mundo e gosto de aprender como as coisas funcionam na prática.<br><br>
+        No meu tempo livre, gosto de jogar jogos online e desenhar.<br>
+        Também entendo um pouco de inglês, o que me ajuda bastante tanto nos estudos quanto nos jogos e conteúdos da internet.
+      </p>
+    </div>
+    <div class="character-img">
+      <img src="/imagens/perso.jpg" alt="Meu avatar estilo Persona 5">
+      <img class="morg morgana" src="/imagens/P5X_Morgana_Artwork.png" alt="morgana">
+    </div>
+  </div>
+
+    <a href="formu.html">
+      <img class="botao" src="imagens/Design_sem_nome-removebg-preview.png" alt="botao">
+    </a>
+
+  
+</body>
+</html>
